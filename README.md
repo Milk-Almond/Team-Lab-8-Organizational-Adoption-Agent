@@ -12,7 +12,8 @@ SubAgent 6 assesses whether an organization can implement, govern and sustain a 
    ```sh
    python3 tools/validate_response.py agents/organizational_adoption/responses/primary.json
    python3 tools/check_frozen_core.py
+   python3 tools/test_agent.py
    ```
 5. See the Team Agent Record for the approval and any reported dissent.
 
-The [specialist instructions](agents/organizational_adoption/specialist_instructions.md) and frozen common contract are ready for final MoE integration. Saved responses are fictional scenario assessments produced in one Codex session.
+The [specialist instructions](agents/organizational_adoption/specialist_instructions.md) and frozen common contract are ready for final MoE integration. Saved responses are fictional scenario assessments produced in one Codex session. The regression checker verifies saved artifacts, not live LLM repeatability; the exact-packet fresh-chat retest remains outstanding.
