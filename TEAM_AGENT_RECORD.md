@@ -165,7 +165,7 @@ Missing details must trigger targeted requests rather than filled-in defaults.
 | Readiness finding | Context dependent; no real organization has been assessed |
 | Dominant gap in common primary test | Accountable operating/stop authority, alongside review capacity and traceability blockers |
 | Evidence request | Delegation/backup artifact before pilot; recurring capacity/funding before rollout |
-| Tests | A–F above; saved Codex assessments validated, three compact fresh-chat decisions matched, exact-packet schema retest pending |
+| Tests | A–F above; saved Codex assessments validated, three compact fresh-chat decisions matched, exact-packet schema retest pending (not represented as passed) |
 | Source record | Five pinned repository snapshots below, including Meilin’s Assignment 7 branch |
 | Remaining limitation | Hypothetical profiles and saved examples do not establish real control effectiveness or repeatability |
 | New commit | See repository history for the exact commit |
@@ -179,7 +179,7 @@ No actual team disagreement was provided. Preserve these unresolved design choic
 - Whether a “conditional pilot” means permission now or permission after gates close. Proposed rule: explicit scope plus HOLD/REQUEST EVIDENCE/PILOT ONLY/ROLLOUT ELIGIBLE.
 - Whether a training rehearsal is sufficient evidence at each stage. Proposed rule: match the review exercise to the consequences and scale of the stage, and request measured performance before real-client use when review is a critical control.
 
-Approved version: `team-subagent-6-v1.0.0` at reviewed repository commit `d19625587365a90e12c87e6b1a30f23a6daacb00`. No dissent or additional revisions were reported. See [TEST_RECORD.md](TEST_RECORD.md) for test evidence.
+Approved version: `team-subagent-6-v1.0.0`. The team-approval commit was `bb8201fe5d777bc990bfd4bdb55b26af9d017198`; the earlier test-record commit was `d19625587365a90e12c87e6b1a30f23a6daacb00`. Later corrective commits retain this approved baseline while improving validation and output instructions. No dissent or additional revisions were reported. See [TEST_RECORD.md](TEST_RECORD.md) for test evidence.
 
 ## 6. Report-out draft
 
