@@ -1,0 +1,34 @@
+{
+  "agent": {
+    "name": "Organizational Adoption Agent",
+    "specialty": "Organizational readiness and sustainment",
+    "version": "team-subagent-6-v1.0.0"
+  },
+  "analytical_question": "Can the organization run a bounded pilot now and what must it demonstrate before operational rollout?",
+  "general_et_finding": "The selected LLM has unmeasured reliability for this task. Generated claims require evaluation.",
+  "application_finding": "Conditional fit for evidence-linked drafting with buyer verification and manual sourcing decisions. The assistant remains read-only and cannot select suppliers.",
+  "organization_specific_finding": "Leadership/sponsorship: Partial: director endorsement without delegation | Skills/training: Gap: no task rehearsal | Workflow/process: Gap: manual sign-off but no AI exception route | Infrastructure/data: Partial: approved sandbox with incomplete source identifiers | Resources/budget: Gap: no protected review time or pilot budget | Governance/risk: Gap: no AI pause or escalation path | Culture/change: Partial: buyers ask how errors will be handled | Operating ownership: Gap: no pilot owner. Dominant readiness issue: No accountable stop authority. Unfunded review and missing identifiers independently block entry.",
+  "evidence": [
+    {
+      "claim": "The procurement director endorses the concept but has not delegated operating authority. Buyers know the sourcing policy and use a standard manual sign-off, but none has practiced verifying AI briefs and no review or escalation step exists for AI errors. An IT sandbox is available and security has approved the sanitized historical packets. An internal spot check found missing approved supplier IDs and bid revision labels in some packets. No reviewer time or pilot budget is allocated. There is no designated pilot owner or person authorized to pause the pilot. Buyers have asked how errors they report will be handled.",
+      "source_or_reference": "cases/primary.json \u2014 capabilities_constraints",
+      "date_or_recency": "Fictional case for Team Lab 8",
+      "evidence_type": "Scenario stipulation",
+      "notes": "Readiness judgments are inferences from these stipulated capabilities."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "Fictional profile. Assessments were produced in one Codex session. Repeatability and operating outcomes require further evidence."
+  ],
+  "confidence_and_uncertainty": "The stage decision follows the supplied case evidence. Real operating capacity and performance require direct verification.",
+  "value_opportunity_implication": "Compare buyer effort, review burden and material defects against the manual workflow before extrapolating value.",
+  "risk_governance_implication": "Retain manual sourcing approval and fallback. Reassess after a material error, loss of authority or a scope change.",
+  "recommendation_management_implication": "HOLD \u2014 pilot. P0: Procurement director delegates stop authority and incident backup in writing. P0: proposed Procurement Operations owner secures funded review hours and passes a verification/fallback rehearsal. P0: proposed procurement analyst reconciles all admitted packet identifiers. Complete all before reconsidering pilot entry.",
+  "change_monitoring_triggers": [
+    "On a material missed error or loss of stop coverage, pause and revert to manual review.",
+    "Reassess before changing the data scope, reviewer capacity or rollout funding."
+  ],
+  "abstention_or_more_information_needed": [
+    "Which director-approved charter will document delegation and backup before pilot entry?"
+  ]
+}

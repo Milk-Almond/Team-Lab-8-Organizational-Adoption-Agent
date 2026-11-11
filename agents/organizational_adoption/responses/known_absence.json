@@ -1,0 +1,34 @@
+{
+  "agent": {
+    "name": "Organizational Adoption Agent",
+    "specialty": "Organizational readiness and sustainment",
+    "version": "team-subagent-6-v1.0.0"
+  },
+  "analytical_question": "Can the organization run a bounded pilot now and what must it demonstrate before operational rollout?",
+  "general_et_finding": "The selected LLM has unmeasured reliability for this task. Generated claims require evaluation.",
+  "application_finding": "Conditional fit for evidence-linked drafting with buyer verification and manual sourcing decisions. The assistant remains read-only and cannot select suppliers.",
+  "organization_specific_finding": "Leadership/sponsorship: Partial: charter and coordinator named | Skills/training: Strength: buyers rehearsed verification and escalation | Workflow/process: Strength: manual approval and rehearsed fallback | Infrastructure/data: Strength: approved read-only environment and verified packet identifiers | Resources/budget: Strength for pilot: funded charter and protected review time. Recurring capacity unknown | Governance/risk: Gap: nobody may pause the pilot | Culture/change: Partial: rehearsal supports error reporting. Sustained uptake unknown | Operating ownership: Partial: coordination exists but stop authority is absent. Dominant readiness issue: Explicit absence of stop authority blocks pilot entry.",
+  "evidence": [
+    {
+      "claim": "The procurement director signed a pilot charter and named the procurement operations manager as coordinator. Two buyers completed a source-check and escalation rehearsal, and a category manager signs a manual comparison before any sourcing approval. IT/security approved the read-only sandbox and sanitized data boundary. A procurement analyst checked supplier IDs and revision labels for all 20 historical packets against the approved source. The charter funds sandbox usage and protects four reviewer hours per week. The team tested error reporting and manual fallback in a rehearsal. Procurement Operations coordinates the pilot log and weekly review. No person is authorized to pause the pilot. Incident backup is not documented. The charter covers four weeks. Recurring staffing and funding after the pilot have not been decided.",
+      "source_or_reference": "cases/known_absence.json \u2014 capabilities_constraints",
+      "date_or_recency": "Fictional case for Team Lab 8",
+      "evidence_type": "Scenario stipulation",
+      "notes": "Readiness judgments are inferences from these stipulated capabilities."
+    }
+  ],
+  "contrary_evidence_or_limitations": [
+    "Fictional profile. Assessments were produced in one Codex session. Repeatability and operating outcomes require further evidence."
+  ],
+  "confidence_and_uncertainty": "The stage decision follows the supplied case evidence. Real operating capacity and performance require direct verification.",
+  "value_opportunity_implication": "Compare buyer effort, review burden and material defects against the manual workflow before extrapolating value.",
+  "risk_governance_implication": "Retain manual sourcing approval and fallback. Reassess after a material error, loss of authority or a scope change.",
+  "recommendation_management_implication": "HOLD \u2014 pilot. P0: procurement director delegates stop authority and records incident backup. Rehearse the stop and fallback path before pilot entry.",
+  "change_monitoring_triggers": [
+    "On a material missed error or loss of stop coverage, pause and revert to manual review.",
+    "Reassess before changing the data scope, reviewer capacity or rollout funding."
+  ],
+  "abstention_or_more_information_needed": [
+    "Who will provide incident backup, and what signed delegation and rehearsal records will confirm coverage before entry?"
+  ]
+}

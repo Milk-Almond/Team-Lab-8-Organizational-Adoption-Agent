@@ -1,0 +1,14 @@
+{
+  "emerging_technology": "Large language model (LLM) generative AI",
+  "intended_application": "A read-only assistant drafts evidence-linked comparison briefs for packaging-supplier RFQs from the same sanitized historical bid packets and approved supplier records. Buyers verify every material claim against the source. Existing sourcing approval stays manual. The assistant cannot send messages, score or select suppliers, or write to procurement systems.",
+  "industry_sector": "Mid-sized U.S. industrial manufacturing",
+  "business_need": "Reduce buyer time spent assembling comparable packaging bids while preserving accuracy and an auditable approval trail.",
+  "users_stakeholders": "Category buyers, category managers, procurement operations, IT/security, and sourcing approvers.",
+  "adoption_posture": "Moderate fast-follower with a preference for reversible trials.",
+  "risk_consequence_context": "Wrong prices, terms, or omissions can distort a sourcing decision. Bid confidentiality and traceability matter. The existing manual comparison and approval process remains available.",
+  "management_question": "Can the organization run a bounded pilot now and what must it demonstrate before operational rollout?",
+  "time_horizon": "Decide this week, assess a four-week pilot if eligible, and make a rollout decision within 90 days.",
+  "additional_context": "Fictional matched test scenarios dated 2026-11-09. Treat supplied organizational details as scenario facts, not independently verified observations. The model, data scope, workflow boundary, strategic premise, and risk are held constant. No model performance or ROI data are supplied. NIST AI 600-1 (2024-07-26), section 2.2 and GOVERN 3.2 (https://doi.org/10.6028/NIST.AI.600-1), describes confabulation and offers voluntary guidance for oversight and feedback. This does not establish any legal obligation, case facts, or performance result.",
+  "organization": "Harbor Components (fictional)",
+  "capabilities_constraints": "The procurement director endorses the concept but has not delegated operating authority. Buyers know the sourcing policy and use a standard manual sign-off, but none has practiced verifying AI briefs and no review or escalation step exists for AI errors. An IT sandbox is available and security has approved the sanitized historical packets. An internal spot check found missing approved supplier IDs and bid revision labels in some packets. No reviewer time or pilot budget is allocated. There is no designated pilot owner or person authorized to pause the pilot. Buyers have asked how errors they report will be handled."
+}
