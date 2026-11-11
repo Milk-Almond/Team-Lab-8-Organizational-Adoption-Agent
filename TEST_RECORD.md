@@ -26,3 +26,7 @@ Three separate ChatGPT conversations received the same compact restatement of th
 All three verdicts matched the expected decisions. The technology and application rationale stayed substantively stable: read-only drafting with source verification and manual approval. Each response returned an object for `organization_specific_finding`, which the frozen schema requires to be a string. The table reports the observed mismatch from the original responses. The previously validated repository JSON remains the saved Codex assessment set.
 
 The next repeatability check should use the exact assembled prompt packets with the embedded schema and run the scaffold validator on the raw responses. Team approval is recorded in the Team Agent Record. No dissent was reported.
+
+## Post-audit remediation (November 10, 2026)
+
+The specialist prompt now explicitly requires `organization_specific_finding` to be a JSON string and restates the frozen field types. Added a repeatable local regression checker for all six saved cases and the frozen-core integrity check. These are preventive fixes, not evidence that the three historical fresh-chat failures have passed. A new independent full-packet model retest is still required; retain the failed outcomes above for transparency.
