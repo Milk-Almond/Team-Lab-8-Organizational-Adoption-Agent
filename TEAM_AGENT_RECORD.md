@@ -132,7 +132,7 @@ Use B with the same funded review hours, ownership and data approvals, but remov
 
 ### Validation record
 
-Manual rule review: A→HOLD; B→PILOT ONLY; C→REQUEST EVIDENCE; D→HOLD; E→REQUEST EVIDENCE for rollout; F→REQUEST EVIDENCE for pilot entry. General/application baseline remains constant. A’s immediate blocker-removal actions differ from B’s measurement and sustainment actions. All six prompts built successfully. The six saved Codex assessments passed the scaffold response validator and the decision and contract checks listed in TEST_RECORD.md. Separate fresh-chat runs remain a repeatability check.
+Manual rule review: A→HOLD; B→PILOT ONLY; C→REQUEST EVIDENCE; D→HOLD; E→REQUEST EVIDENCE for rollout; F→REQUEST EVIDENCE for pilot entry. General/application baseline remains constant. A’s immediate blocker-removal actions differ from B’s measurement and sustainment actions. All six prompts built successfully. The six saved Codex assessments passed the scaffold response validator and the decision and contract checks listed in TEST_RECORD.md. Three separate ChatGPT runs using a compact prompt matched the expected decisions. All three returned an object where the frozen schema requires a string. See TEST_RECORD.md for the observed results and the remaining exact-packet retest.
 
 ## 4. Organizational intake for final MoE integration
 
@@ -165,7 +165,7 @@ Missing details must trigger targeted requests rather than filled-in defaults.
 | Readiness finding | Context dependent; no real organization has been assessed |
 | Dominant gap in common primary test | Accountable operating/stop authority, alongside review capacity and traceability blockers |
 | Evidence request | Delegation/backup artifact before pilot; recurring capacity/funding before rollout |
-| Tests | A–F above; saved Codex assessments validated, fresh-chat repeatability pending |
+| Tests | A–F above; saved Codex assessments validated, three compact fresh-chat decisions matched, exact-packet schema retest pending |
 | Source record | Five pinned repository snapshots below, including Meilin’s Assignment 7 branch |
 | Remaining limitation | Hypothetical profiles and saved examples do not establish real control effectiveness or repeatability |
 | New commit | See repository history for the exact commit |
