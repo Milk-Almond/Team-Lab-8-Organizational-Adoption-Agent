@@ -64,7 +64,24 @@ def main():
                         str(AGENT / "responses" / (case + ".json"))], check=True)
         print(f"PASS {case}: {decision}")
     print("PASS: six saved cases, schema, context invariance, decisions, frozen core")
-    print("NOTE: Fresh independent full-packet model retest still required.")
+    # Decision-policy guardrails: these exact contrasts must remain explicit in instructions.
+    rules = (AGENT / "specialist_instructions.md").read_text()
+    required_rules = (
+        "a named pilot coordinator without documented stop delegation or incident backup is REQUEST EVIDENCE",
+        "a successful pilot with recurring staffing and funding still undocumented/undecided is REQUEST EVIDENCE",
+        "no one has authority",
+        "HOLD",
+    )
+    for phrase in required_rules:
+        check(phrase.lower() in rules.lower(), f"Missing decision-policy rule: {phrase}")
+    # Preserve the historical fresh-chat outcomes as evidence rather than silently rewriting them.
+    historical = AGENT / "fresh_retest"
+    for case in EXPECTED:
+        path = historical / (case + "_response.json")
+        check(path.is_file(), f"Missing historical fresh-chat response: {path}")
+        validate_type(json.loads(path.read_text()), OUTPUT, f"{case}.fresh_retest")
+    print("PASS: six archived fresh-chat responses remain schema-valid; historical decision mismatches retained")
+    print("NOTE: Updated decision policy requires new independent model reruns for contrast_2 and sustainment.")
 
 if __name__ == "__main__":
     main()
