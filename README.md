@@ -1,6 +1,6 @@
 # Team Lab 8 · Organizational Adoption Agent
 
-SubAgent 6 assesses whether an organization can implement, govern and sustain a proposed technology application. Version **team-subagent-6-v1.0.0** is packaged for team review.
+SubAgent 6 assesses whether an organization can implement, govern and sustain a proposed technology application. Version **team-subagent-6-v1.0.0** has been approved by the team.
 
 1. Read the [Team Agent Record](TEAM_AGENT_RECORD.md) for the five-source comparison, readiness framework, workshop steps, intake fields and report-out.
 2. Build a prompt from the repository root:
@@ -13,6 +13,6 @@ SubAgent 6 assesses whether an organization can implement, govern and sustain a 
    python3 tools/validate_response.py agents/organizational_adoption/responses/primary.json
    python3 tools/check_frozen_core.py
    ```
-5. Record team decisions, dissent and approval in the Team Agent Record.
+5. See the Team Agent Record for the approval and any reported dissent.
 
 The [specialist instructions](agents/organizational_adoption/specialist_instructions.md) and frozen common contract are ready for final MoE integration. Saved responses are fictional scenario assessments produced in one Codex session.

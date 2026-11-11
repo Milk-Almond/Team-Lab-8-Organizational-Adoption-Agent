@@ -1,7 +1,7 @@
 # Team Lab 8 — Organizational Adoption Agent
 Version: team-subagent-6-v1.0.0  
 Prepared: November 10, 2026  
-Status: synthesis for team review; approval, workshop participation, and posting are not evidenced.
+Status: Team approved, as reported by the user.
 
 ## Workshop sequence
 
@@ -161,7 +161,7 @@ Missing details must trigger targeted requests rather than filled-in defaults.
 | Version | team-subagent-6-v1.0.0 |
 | Governing question | Can this organization absorb, govern and sustain the application? |
 | Build status | Runnable prompt package and integration mapping prepared |
-| Team approval | Pending; no approval vote or signatories supplied |
+| Team approval | Approved by the team, as reported by the user. Approval date, participants, and voting details were not supplied. |
 | Readiness finding | Context dependent; no real organization has been assessed |
 | Dominant gap in common primary test | Accountable operating/stop authority, alongside review capacity and traceability blockers |
 | Evidence request | Delegation/backup artifact before pilot; recurring capacity/funding before rollout |
@@ -179,11 +179,11 @@ No actual team disagreement was provided. Preserve these unresolved design choic
 - Whether a “conditional pilot” means permission now or permission after gates close. Proposed rule: explicit scope plus HOLD/REQUEST EVIDENCE/PILOT ONLY/ROLLOUT ELIGIBLE.
 - Whether a training rehearsal is sufficient evidence at each stage. Proposed rule: match the review exercise to the consequences and scale of the stage, and request measured performance before real-client use when review is a critical control.
 
-Team completion fields: approval date ___; participants ___; agreed revisions ___; dissent/minority view ___; approved version/commit ___; model-run evidence ___; posting location ___.
+Approved version: `team-subagent-6-v1.0.0` at reviewed repository commit `d19625587365a90e12c87e6b1a30f23a6daacb00`. No dissent or additional revisions were reported. See [TEST_RECORD.md](TEST_RECORD.md) for test evidence.
 
 ## 6. Report-out draft
 
-“Our synthesized SubAgent 6 separates application fit from organizational readiness and uses eight evidence-based dimensions. In the common hypothetical test, Harbor is on HOLD because operating authority, review capacity and source traceability are missing. Ridge is PILOT ONLY because those pilot controls exist, while performance and recurring capacity remain unproven. Removing authority evidence triggers REQUEST EVIDENCE rather than an invented answer. The key intake additions are accountable owners and stop authority, demonstrated review capacity, workflow/data evidence, recurring funding, staff feedback and measurable gates. Version team-subagent-6-v1.0.0 is packaged for team review; approval remains pending.”
+“Our synthesized SubAgent 6 separates application fit from organizational readiness and uses eight evidence-based dimensions. In the common hypothetical test, Harbor is on HOLD because operating authority, review capacity and source traceability are missing. Ridge is PILOT ONLY because those pilot controls exist, while performance and recurring capacity remain unproven. Removing authority evidence triggers REQUEST EVIDENCE rather than an invented answer. The key intake additions are accountable owners and stop authority, demonstrated review capacity, workflow/data evidence, recurring funding, staff feedback and measurable gates. Version team-subagent-6-v1.0.0 has been approved by the team.”
 
 ## 7. Source snapshot register
 
@@ -199,5 +199,5 @@ Snapshots retrieved during this session. References establish repository content
 
 Substantive paths: mp7240-sudo: agents/organizational_adoption_agent/ on its Assignment 7 branch; yanisimova: MASY1800_ET_Agent_Scaffold_v1_0-2/agents/organizational_adoption_agent/; Harry: agents/organizational_adoption/; sawulya: MASY1800_ET_Agent_Scaffold_v1_0 9/agents/organizational_adoption_agent/; yicrry777: agents/organizational_adoption_agent/. Read specialist_instructions.md, case/response JSON and available Markdown records in these paths. Common input/output schemas inspected in Harry’s pinned snapshot.
 
-No current legal/platform/vendor claim is used to decide the new worked cases. The source agents’ cited NIST, platform, C2PA and vendor assertions are not independently reverified here and must be checked if used for a real implementation decision. AI assisted comparison, drafting and manual rule application; human workshop work and team approval must be recorded by the team.
+No current legal/platform/vendor claim is used to decide the new worked cases. The source agents’ cited NIST, platform, C2PA and vendor assertions are not independently reverified here and must be checked if used for a real implementation decision. AI assisted comparison, drafting and manual rule application; team approval was reported by the user. Workshop participation details were not supplied.
 
