@@ -15,7 +15,7 @@ The saved assessments were produced in one Codex session using the team instruct
 
 ## Fresh-chat decision retest
 
-Three separate ChatGPT conversations received the same compact restatement of the specialist rules and the corresponding fictional profile. This tested the decision logic with fresh context. The compact prompt listed the output keys and array fields but omitted the frozen schema's explicit string type for `organization_specific_finding`. The complete assembled prompt packet still needs a fresh-chat retest.
+Three separate ChatGPT conversations received the same compact restatement of the specialist rules and the corresponding fictional profile. This tested the decision logic with fresh context. The compact prompt listed the output keys and array fields but omitted the frozen schema's explicit string type for `organization_specific_finding`. That initial compact-prompt run predated the later full-packet fresh-chat retest recorded below.
 
 | Case | Observed verdict | Evidence and action in the response | Output contract |
 |---|---|---|---|
@@ -29,21 +29,28 @@ All three verdicts matched the expected decisions. The technology and applicatio
 
 Six independent fresh-chat tests were completed using the assembled specialist prompt packets containing the output schema. The resulting responses were saved as JSON files and validated successfully using `tools/validate_response.py`.
 
-| Test case | Expected decision | JSON validation |
-|---|---|---|
-| primary | HOLD | PASS |
-| contrast_1 | PILOT ONLY | PASS |
-| contrast_2 | REQUEST EVIDENCE | PASS |
-| known_absence | HOLD | PASS |
-| review_competence | REQUEST EVIDENCE | PASS |
-| sustainment | REQUEST EVIDENCE | PASS |
+| Test case | Expected decision | Observed fresh-chat decision | JSON validation | Decision check |
+|---|---|---|---|---|
+| primary | HOLD | HOLD | PASS | MATCH |
+| contrast_1 | PILOT ONLY | PILOT ONLY | PASS | MATCH |
+| contrast_2 | REQUEST EVIDENCE | HOLD | PASS | MISMATCH |
+| known_absence | HOLD | HOLD | PASS | MATCH |
+| review_competence | REQUEST EVIDENCE | REQUEST EVIDENCE | PASS | MATCH |
+| sustainment | REQUEST EVIDENCE | HOLD | PASS | MISMATCH |
 
 All six raw responses are preserved in `agents/organizational_adoption/fresh_retest/` on the `main` branch, commit `23f1c91`.
 
-The Review Competence response was additionally reviewed for decision accuracy, eight-dimension coverage, evidence requests, and readiness reasoning. The remaining fresh-chat responses passed JSON validation; their substantive decisions should be checked against the expected outcomes before claiming full decision-level verification.
+A subsequent inspection of the six committed raw responses found four expected decision matches and two mismatches (contrast_2 and sustainment). The Review Competence response was also reviewed for decision accuracy, eight-dimension coverage, evidence requests, and readiness reasoning. The original raw responses are preserved unchanged; schema-valid does not imply decision-correct.
 
 ## Post-audit remediation (November 10, 2026)
 
 The specialist prompt now explicitly requires `organization_specific_finding` to be a JSON string and restates the frozen field types. Added a repeatable local regression checker for all six saved cases and the frozen-core integrity check. These are preventive fixes, not evidence that the three historical fresh-chat failures have passed. **Remediation follow-up:** The independent full-packet fresh-chat retest has now been completed for all six scenarios. All six responses passed JSON validation, and the resulting files were committed to the repository on `main` as commit `23f1c91`.
 
 The three earlier fresh-chat output-contract failures remain documented above as historical evidence. They have not been deleted or retroactively reclassified. The subsequent retest demonstrates that the revised instructions produced schema-valid outputs across the six tested scenarios. Final decision-level verification remains separate from schema validation.
+
+
+## Decision-label remediation (November 11, 2026)
+
+Review of the committed full-packet outputs identified two decision-level failures despite valid JSON: `contrast_2` returned HOLD when pilot stop delegation and incident backup were **not documented**, and `sustainment` returned HOLD when recurring staffing and funding after a successful pilot were **undecided/undocumented**. Both are critical unknowns that prevent stage authorization but do not establish affirmative absence or failure. The expected decision in both cases is REQUEST EVIDENCE. By contrast, `known_absence` explicitly states that nobody is authorized to stop the pilot and correctly warrants HOLD.
+
+The specialist instructions were revised to distinguish an **established blocker** (HOLD) from **missing, undecided, or unverified critical evidence** (REQUEST EVIDENCE), while withholding stage authorization in either case. This change is committed on `main`. The six original independent responses were not altered or relabeled. **The two affected cases need fresh-chat reruns with the updated prompt before decision-level repeatability can be marked PASS.** The repository's saved-case CI regression and JSON validator alone do not establish that rerun outcome.
